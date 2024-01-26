@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;;
+}
+
+#page {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.content{
+    padding: 1.6rem 3.2rem;
+    width: min(112rem, 100%);
+    margin: 0 auto;
+}
+
+header{
+    background-color: #065E7C;
+    width: 100%;
+}
+header form{
+    flex: 1;
+}
+#itens{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    justify-content: center;
+}
+header input{
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    opacity: 0.56;
+    color: #fff;
+}
+
+.content section{
+    display: flex;
+ flex-direction: column;
+ max-width: 803px;
+
+} 
+
+#row_itens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 31px;
+}
+.content section p{
+    margin-top: 31px;
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-bottom: 36px;
+}
+
+footer{
+    background-color:#387E96;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#corpo{
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    justify-content: space-between;
+}
+div h4{
+    margin-bottom: 32px;
+}
+.artigos{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.artigos_right{
+    display: flex;max-width: 382px;
+    flex-direction: column;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    max-width: 384px;
+    gap: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+    #corpo{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 50%;
+    }
+}
